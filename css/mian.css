@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+   font-family: "Rubik", system-ui;
+
+}
+
+.shape-1{
+  position: absolute;
+  width: 35%;
+  height: 90%;
+  background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-bottom-left-radius: 256px;
+  border-bottom-right-radius: 256px;
+  background-position: 10% 40%;
+  transform: translate(-30%);
+  z-index: 20;
+}
+
+.shape-2{
+  position: absolute;
+  width: 35%;
+  height: 90%;
+  background-color: hsl(270, 20%, 96%);
+  border-top-left-radius: 256px;
+  border-top-right-radius: 256px;
+  background-position: 10% 40%;
+  transform: translate(200%, 15%);
+  z-index: 20;
+}
+.container{
+    position: relative;
+    z-index: 30;
+    display: flex;
+    height: 100svh;
+    width: 100%;
+   align-items: center;
+   justify-content: center;
+   gap: 100px;
+   height: 100%;
+    
+}
+.dog{
+  width: 50px;
+  border-radius: 8px;
+}
+p{
+  width: 500px;
+}
+.phone{
+  width: 260px;
+  height: 520px;
+  border: solid white 8px;
+  box-shadow: 0px 0px 20px 0px #80808052;
+  border-radius: 24px;
+  background-color:  hsl(270, 20%, 96%);
+}
+.notch{
+  width: 50%;
+  height: 20px;
+  background-color: white;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+header{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.notch-1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.person{
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  padding: 20px 20px 10px;
+  
+}
+.all{
+  display: flex;
+  
+  gap: 10px;
+}
+.arrow,.dots{
+  color: white;
+}
+.man{
+  width: 32px;
+  height: 32px;
+  border: solid white 1px;
+  border-radius: 50%;
+}
+.name{
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+}
+.Available{
+  font-weight: 500;
+  color: white;
+  font-size: 10px;
+  opacity: .5;
+}
+.avatar{
+  display: flex;
+  flex-direction: column;
+}
+.arrow{
+  margin: 10px 0;
+}
+.dots{
+  margin: 5px 0
+  ;
+}
+.type-1{
+  background-color: hsla(293, 100%, 63%, 0.099);
+  color: hsl(293, 100%, 63%);
+  font-size: 10px;
+  width: 55%;
+  border-radius: 12px;
+  padding: 5px;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+}
+.photos{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.type-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: white;
+  box-shadow:  0 0 20px 2px rgba(185, 182, 182, 0.586);
+  max-width: 55%;
+  padding: 5px;
+  border-radius: 12px;
+  font-size: 10px;
+  width:fit-content;
+}
+.type-3{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.pay{
+  display: flex;
+  border-radius: 12px;
+  width: 70%;
+  justify-content: space-between;
+  background-image: linear-gradient(to right,hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+  padding: 6px 15px 10px 6px;
+  color: white;
+
+}
+.circle{
+  border: solid white 1px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+}
+.left{
+  display: flex;
+  opacity: .6;
+  ;gap: 10px;
+}
+.walk{
+  font-size: 12px;
+  margin:3px 0;
+}
+.money{
+  font-weight: 700;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+ margin:10px;
+ background-color: white;
+ padding: 5px 10px;
+ border-radius: 24px;
+}
+.button{
+  border: none;
+}
+.arrow-1{
+  width: 32px;
+  height: 32px;
+  color: white;
+  background-color:  hsl(271, 36%, 24%);
+  border-radius: 50%;
+  border: solid  hsl(271, 36%, 24%);
+ 
+
+}
+.arrow-1::before{
+   display: flex;
+  flex-direction: row;
+  justify-content: center;
+ margin-top: 8px;
+}
+p{
+
+  width: 400px;
+  line-height: 25px;
+  color:  hsla(271, 36%, 24%, 0.53);
+}
+h1{color:  hsl(271, 36%, 24%);
+font-weight: 700;}
+@media(max-width:600px){
+  .container{
+    flex-direction: column;
+    height: 100%;
+    padding: 50px 0;
+    gap: 20px;
+
+  }
+  body{
+    width: 100%;
+    height: 100%;
+    
+    
+  }
+  .shape-2{
+    display: none;
+  }
+  .shape-1{
+     background-position: 10% 40%;
+      width: 80%;
+  height: 60%;
+  }
+  .text{
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  p{width: 100%;
+  height: 100%;
+text-align: center;}
+
+  .phone{height: 50%;}
+}
